@@ -1,6 +1,6 @@
-# 멤버
+# Members
 
-* 고인규 [tata](tata/README.md)
+* 고인규 [(tata)](tata)
 * 김민철
 * 돈해봉
 * 신지연
