@@ -1,6 +1,6 @@
 # 과제 제출
 
-* 고인규 [tata](/inkyuko/webstudy/memebers/tata)
+* 고인규 [tata](../tata)
 * 김민철
 * 돈해봉
 * 신지연
