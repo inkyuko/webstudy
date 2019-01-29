@@ -1,6 +1,6 @@
-# 과제 제출
+# 멤버
 
-* 고인규 [tata](../tata/README.md)
+* 고인규 [tata](tata/README.md)
 * 김민철
 * 돈해봉
 * 신지연
