@@ -1,9 +1,9 @@
-# 과제 제출
+# Members
 
-* 고인규 [tata](../tata/README.md)
+* 고인규 [(tata)](tata)
 * 김민철
 * 돈해봉
-* 신지연
+* 신지연 [(sinjyeon)](sinjyeon)
 * 이보희
 * 이현화
 * 이혜지
