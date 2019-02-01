@@ -4,7 +4,7 @@
 * 김민철
 * 돈해봉
 * 신지연 [(sinjyeon)](sinjyeon)
-* 이보희 [(bohee)](bohee)
+* 이보희 
 * 이현화
 * 이혜지
 * 장원영
