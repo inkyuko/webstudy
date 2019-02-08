@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Section</title>
+	<link rel="stylesheet" href="../assets/example.css">
+</head>
+<body>
+	<h1>섹션 (Section)</h1>
+
+	<hr>
+
+	<pre><code>BODY, HEADER, NAV, SECTION, ARTICLE, ASIDE, FOOTER</code></pre>
+
+
+	<h2>BODY</h2>
+	<p>&lt;body&gt; 요소는 문서의 본문 영역을 표시한다. 본문 영역은 실제 콘텐츠가 표현되는 공간이며, 이 공간에서 사용자와의 상호작용이 실질적으로 이루어진다. 또한 body 요소는 브라우저가 렌더링해야 할 범위를 알려준다.</p>
+
+	<h2>HEADER</h2>
+	<p>HTML5에 새롭게 추가된 요소로서, 웹 문서 맨 윗부분에 있으며 웹 사이트 이름, 글로벌 링크(로그인, 회원가입, 사이트맵, 언어 선택등 웹사이트 어느 곳에서든지 이용할 수 있는 링크)등으로 구성된 영역이다.</p>
+	<pre><code>&lt;header&gt;
+	&lt;h1&gt;LOGO&lt;/h1&gt;
+	&lt;h2&gt;검색&lt;/h2&gt;
+	&lt;input type="text"&gt;
+&lt;/header&gt;</code></pre>
+	<ul>
+		<li>사이트 이름(로고), 내비게이션, 헤드라인, 검색 등으로 구성된다.</li>
+		<li>과거에는 &lt;div id="header"&gt;와 같이 사용했었다.</li>
+		<li>문서나 각 section, article 의 헤더 부분에 사용가능하며, 그것들의 제목이나 간단한 소개 콘텐츠를 담을 수 있다.</li>
+		<li>브라우저가 헤더영역을 인식할 수 있게되면 스크린리더의 내비게이션과 검색엔진의 색인에 도움을 줄 수 있다.</li>
+	</ul>
+
+	<h2>NAV</h2>
+	<p>HTML5에 새롭게 추가된 요소로서, 목적지로 이동할 수 있도록 링크를 별도로 모아둔 영역이다.</p>
+	<pre><code>&lt;nav&gt;
+	&lt;h1&gt;메인 내비게이션&lt;/h1&gt;
+	&lt;ul&gt;
+		&lt;li&gt;메뉴1&lt;/li&gt;
+		&lt;li&gt;메뉴2&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+	<ul>
+		<li>링크 중에서 중요도가 높은 링크를 체계적으로 구성해 놓은 것으로 단순 본문 링크와 메뉴(카테고리) 성격의 링크인지 확인이 가능하다.</li>
+		<li>ul, li, a 요소들을 여전히 함께 사용해야 한다.</li>
+		<li>브라우저가 네비게이션 영역을 알 수 있게 되면 스크린리더의 내비게이션과 검색엔진의 색인에도 도움을 줄 수 있다.</li>
+	</ul>
+
+	<h2>SECTION</h2>
+	<p>HTML5에 새롭게 추가된 요소로서, 섹션을 표시한다.</p>
+	<pre><code>&lt;section&gt;
+	&lt;article&gt;
+		&lt;h1&gt;제목&lt;/h1&gt;
+		&lt;p&gt;본문&lt;/p&gt;
+	&lt;/article&gt;
+&lt;/section&gt;</code></pre>
+	<ul>
+		<li>내용적 흐름과 구조를 만들기 위해 내용을 나누는 용도이다.</li>
+		<li>같은 성격의 내용, 즉 관련있는 내용을 section 요소로 묶어 표시한다.</li>
+		<li>뉴스와 광고 섹션 처럼 서로 다른 성격을 지닌 것들을 section 요소로 표시하면 영역 구분이 아주 명확해진다.</li>
+		<li>탭과 같은 상위 주제 아래에 하위 주제로 엮인 탭 방식의 구성일때 각각의 탭을 section 요소로 표시할 수 있다.</li>
+		<li>섹션은 독립적인 영역이라 섹션 내에도 헤더(header)와 푸터(footer)를 둘 수 있다. 이것은 섹션마다 나름의 제목 체계를 가질 수 있다는 것을 의미하며, 섹션마다 H1 요소를 가질 수 있게 되었다.</li>
+		<li>스크린리더 사용자는 섹션 단위로 이동할 수 있으므로 문서 내 내비게이션이 좀 더 수월해지고 검색엔진은 특정 섹션 중심으로 색인 활동을 할 수 있으므로 검색엔진의 효율성을 높일 수 있다.</li>
+	</ul>
+
+	<h2>ARTICLE</h2>
+	<p>HTML5에 새롭게 추가된 요소로서, 독립적으로 구성된 글을 표시한다.</p>
+	<pre><code>&lt;article&gt;
+	&lt;header&gt;
+		&lt;h1&gt;HTML5 구조&lt;/h1&gt;
+		&lt;p&gt;Published On &lt;time datetime="2013-01-22"&gt;2013년1월22일&lt;/time&gt;&lt;/p&gt;
+	&lt;/header&gt;
+
+	&lt;p&gt;본문 내용&lt;/p&gt;
+
+	&lt;footer&gt;Posted in unclepapa&lt;/footer&gt;
+
+	&lt;article&gt; &lt;!-- 코멘트 시작 --&gt;
+		&lt;header&gt;작성자:&lt;a href=""&gt;나그네&lt;/a&gt; at &lt;time datetime="2013-01-22T08:45"&gt;2013년1월22일 08:45&lt;/time&gt;&lt;/header&gt;
+		&lt;p&gt;코멘트 내용&lt;/p&gt;
+	&lt;/article&gt; &lt;!-- 코멘트 끝 --&gt;
+&lt;/article&gt;
+</code></pre>
+	<ul>
+		<li>본문과 별개로 구성되어 다른 영역에 영향을 주거나 받지 않고 독립적으로 배포되거나 재사용할 수 있다.</li>
+		<li>게시판의 게시물, 블로그 포스트, 댓글, 위젯에 담긴 콘텐츠등이 article에 해당한다.</li>
+		<li>일반적인 상황에서는 section 요소가 article 요소를 포함한다. 하지만 독립적으로 구성된 내용이 몇 개의 섹션으로 구성된 경우라면 article 요소가 section 요소를 포함할 수도 있다.</li>
+		<li>section 요소가 관련 있는 내용을 묶는 역할이라면 article 요소는 관련 있는 내용 중에서 독립적으로 구성된 글을 별도로 묶는 역할이다.</li>
+		<li>article 영역 내에 헤더(header)와 푸터(footer)를 둘 수 있다.</li>
+		<li>article 요소안에 article 요소가 들어갈 경우, 밖의 요소의 내용과 안쪽의 요소의 내용이 관련이 있는 내용이라는 것을 의미한다.</li>
+	</ul>
+
+	<h2>ASIDE</h2>
+	<p>HTML5에 새롭게 추가된 요소로서, 페이지 전체 내용과는 어느정도 관련성이 있지만 주요 내용과는 직접적인 연관성은 없는 분리된 내용을 담고 있다.</p>
+	<pre><code>&lt;aside&gt;
+	&lt;section&gt;
+		&lt;h1&gt;최근글&lt;/h1&gt;
+		&lt;ul&gt;
+			&lt;li&gt;목록1&lt;/li&gt;
+			&lt;li&gt;목록2&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/section&gt;
+&lt;/aside&gt;</code></pre>
+	<ul>
+		<li>흔히 사이드바라고 부르는 영역으로 배너, 용어 설명, 관련 상품 등 본문 내용과 직접적인 관련성이 적거나 없는 내용으로 구성된다.</li>
+		<li>aside 요소로 구성된 것을 검색엔진은 무시하고 본문 위주로 색인을 진행할 수 있고 스크린리더 사용자는 해당 영역이 어떤 성격의 영역인지 신속하게 파악할 수 있으므로 곧바로 다른 영역으로 이동할 수도 있다.</li>
+	</ul>
+
+	<h2>FOOTER</h2>
+	<p>HTML5에 새롭게 추가된 요소로서, 웹 문서 맨 아래쪽에 있으며 저작권, 연락처등으로 구성된 영역이다.</p>
+	<pre><code>&lt;footer&gt;
+	&lt;address&gt;
+    	연락처 : &lt;a href="mailto:webmaster@somedomain.com"&gt;help@example.com&lt;/a&gt;.&lt;br&gt;
+    	모질라 재단, 1981 Landings Drive Building K Mountain View, CA 94043-0801 USA
+    &lt;/address&gt;
+    &lt;small&gt;Copyright &copy; 2013 Mozila&lt;/small&gt;
+&lt;/footer&gt;</code></pre>
+	<ul>
+		<li>푸터는 바닥 영역 또는 꼬리말을 지칭하는데, 저작권, 연락정보 등 본문과의 관련성은 있지만 본문에는 담기 어려운 내용을 담는다.</li>
+		<li>일반적으로 푸터 영역은 한 문서 내에서 한 번만 제공되지만 section 요소나 article 요소 내에 있는 footer 요소는 해당 영역에 관한 꼬리말을 표시할 수 있다.</li>
+		<li>맨위로 가기 링크나 헤더의 메인 내비게이션도 반복 제공을 위해 푸터 영역에 둘 수 있다.</li>
+	</ul>
+
+
+</body>
+</html>
