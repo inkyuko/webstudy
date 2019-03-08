@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>외부 콘텐츠</title>
+</head>
+<body>
+
+	<img src="../assets/01_tree.png" alt="이미지" title="이미지 제목">
+
+<!--
+<canvas id="canvas" height="300" width="300" style='border:1px solid' onmousemove='drawPath(event)' onmousedown='registerDrawingMode(event)' onmouseup='releaseDrawingMode()'></canvas>
+
+<script>
+var isLeftButtonPressed = false;
+var oldX = 0;
+var oldY = 0;
+
+var canvas;
+var context;
+function registerDrawingMode(event) {
+	var event = event || window.event;
+    var button = event.which || event.button;
+
+	if (button == 1) {
+		isLeftButtonPressed = true;
+		oldX = event.clientX;
+		oldY = event.clientY;
+	} else {
+		isLeftButtonPressed = false;
+	}
+}
+function releaseDrawingMode() {
+	isLeftButtonPressed = false;
+}
+function drawPath(event) {
+	if (isLeftButtonPressed) {
+		context.beginPath();
+		context.moveTo(oldX, oldY);
+		context.lineTo(event.clientX, event.clientY);
+		console.log(oldX+':'+oldY+':'+event.clientX+':'+event.clientY);
+		oldX = event.clientX;
+		oldY = event.clientY;
+		context.lineWidth = 2;
+		context.strokeStyle = '#FF9933';
+		context.stroke();
+	}
+}
+
+window.onload = function() {
+	canvas= document.getElementById('canvas');
+	context = canvas.getContext('2d');
+}
+
+</script> -->
+
+<!--
+<div>
+	<input type="text" id="keyword"> <button type="button" onclick="onSearch()">검색</button>
+</div>
+
+<iframe id="iframe" src="https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&q=%EC%95%A0%EB%93%9C%ED%94%BD" frameborder="0" width="100%" height="500"></iframe>
+
+<script>
+	function onSearch(t){
+		var value = document.querySelector('#keyword').value;
+		document.querySelector('#iframe').src="https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&q="+value;
+	}
+</script> -->
+
+
+
+<!-- https://adpick.co.kr/apis/file_download.php?indexno=54&podgateopenweb -->
+
+<video width="300" height="300" src="assets/video.mp4" controls autoplay type="video/mp4"></video>
+
+<audio src="assets/audio.mp3" controls></audio>
+
+<a href="https://adpick.co.kr" target="_parent">애드픽으로 이동</a>
+
+
+
+</body>
+</html>
