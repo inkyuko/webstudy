@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MBTI별 유형정리</title>
+		<style>
+		 	table{
+				width:200;
+				border-spacing: 0;
+				border-collapse: collapse;
+			}
+			/*아래 코드가 무슨 뜻인지~?테이블 th와 td 모두 아래와같이 하겠다?*/
+			table th,
+			table td{
+				border:3px white;
+			}
+
+			table thead th{
+				background-color: lightgreen;
+			}
+			
+/*			짝수 가로행에 색을 넣고 싶으면 어떻게 해야하나요?
+*/			table tbody th:nth-child(2n-1) {
+			    background-color: yellow;
+			  }
+
+			table tbody td {
+				font=weight: bold; 
+				padding: 10px;
+				text-align: center;
+			}
+
+/*			이때 td는 col 기준?
+*/			table tbody td:nth-child(2n) {
+			    background-color: #bbdefb;
+			  }
+		 </style>
+		
+</head>
+<body>
+	<caption>MBTI 유형 별 성격</caption>
+		<a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC" target="_blank"accesskey="a">MBTI 성격검사 하러 가기</a>
+	<br>
+	<table summary="MBTI 유형별 정리를 위한 표로 각 행별 성격 속성에 따라 구분됩니다.">
+		<thead>
+			<tr>
+				<th colspan="5" scope="col">유형</th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+				<th scope="col"></th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<th rowspan="1"scope="row">ANALYSTS</th>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-intj" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/intj-architect.svg" alt="INTJ 성격 이미지"width=100 controls=""><br><strong>INTJ<br>Architect</strong></a><br>Imaginative and strategic thinkers</td>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-intp" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/intp-logician.svg" alt="INTP 성격 이미지"width=100 controls=""><br><strong>INTP<br>Logician</strong></a><br>Innovative inventors</td>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-entj" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/entj-commander.svg" alt="ENTJ 성격 이미지"width=100 controls=""><br><strong>ENTJ<br>Commander</strong></a><br>Bold,imaginative and strongwilled leaders</td>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-entp" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/entp-debater.svg" alt="ENTJ 성격 이미지"width=100 controls=""><br><strong>ENTP<br>Debater</strong></a><br>Smart and curious thinkers </td>
+			</tr>
+
+			<tr>
+				<th scope="row">DIPLOMATS</th>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-infp" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/infp-mediator.svg" alt="INFP 성격 이미지"width=100 controls=""><br><strong>INFP<br>Mediator</strong></a><br>Poetic,kind and altruistic people</td>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-enfp" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/enfp-campaigner.svg" alt="ENFP 성격 이미지"width=100 controls=""><br><strong>ENFP<br>Campaigner</strong></a><br>Enthusiastic, creative and sociable free spirits</td>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-infj" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/infj-advocate.svg" alt="INFJ 성격 이미지"width=100 controls=""><br><strong>INFJ<br>Advocate</strong></a><br>Quiet and,mystical idealists </td>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-enfj" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/enfj-protagonist.svg" alt="ENFJ 성격 이미지"width=100 controls=""><br><strong>ENFJ<br>Protagonist</strong></a><br>Charismatic and inspiring leaders</td>
+
+			</tr>
+			
+			<tr>
+				<th scope="row">SENTINELS</th>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-istj" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/istj-logistician.svg" alt="ISTJ 성격 이미지"width=100 controls=""><br><strong>ISTJ<br>Logistician</strong></a><br>Practical and fact-minded individuals</td>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-isfj" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/isfj-defender.svg" alt="ISFJ 성격 이미지"width=100 controls=""><br><strong>ISFJ<br>Defender</strong></a><br>Very dedicated and warm protectors</td>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-estj" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/estj-executive.svg" alt="ESTJ 성격 이미지"width=100 controls=""><br><strong>ESTJ<br>Executive</strong></a><br>Excellent administrators</td>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-esfj" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/esfj-consul.svg" alt="ESFJ 성격 이미지"width=100 controls=""><br><strong>ESFJ<br>Consul</strong></a><br>Extraordinarily caring, social and popular people</td>
+			</tr>
+
+			<tr>
+				<th scope="row">EXPLORERS</th>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-istp" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/istp-virtuoso.svg" alt="ISTP 성격 이미지"width=100 controls=""><br><strong>ISTP<br>Virtuoso</strong></a><br>Bold and practical experimenters</td>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-isfp" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/isfp-adventurer.svg" alt="ISFP 성격 이미지"width=100 controls=""><br><strong>ISFP<br>Adventurer</strong></a><br>Flexible and charming artists</td>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-estp" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/estp-entrepreneur.svg" alt="ESTP 성격 이미지"width=100 controls=""><br><strong>ESTP<br>Enterpreneur</strong></a><br>Snart,nenrgetic and very  perceptive people</td>
+				<td><a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-esfp" target="_blank"accesskey="a"><img src="https://storage.googleapis.com/neris/public/images/types/esfp-entertainer.svg" alt="ESFP 성격 이미지"width=100 controls=""><br><strong>ESFP<br>Entertainer</strong></a><br>Spontaneous,energetic and enthusiastic entertainers</td>		
+
+			</tr>
+
+		</tbody>
+		
+		<tfoot>
+			<tr>
+				<th colspan="5">
+				자신의 성격 특성을 알아볼 수 있는 MBTI 검사
+				<br>
+				틀려도 나는 책임 없다
+				</th>
+			</tr>
+
+		</tfoot>
+
+	</table>
+</body>
+</html>
