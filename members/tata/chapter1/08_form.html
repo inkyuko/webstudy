@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>폼</title>
+</head>
+<body>
+
+<form action="https://tata.oddm.co.kr/admin/members2" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="memberId" value="0">
+
+	<fieldset>
+		<legend>멤버 등록</legend>
+		<div>
+			<label for="">이름</label>
+			<input type="text" name="name" required>
+		</div>
+		<div>
+			<label for="">수식어</label>
+			<input type="text" name="modifier" placeholder="수식어">
+		</div>
+		<div>
+			<label for="">직책</label>
+			<select name="job">
+            	<option value="CEO">대표(CEO)</option>
+            	<option value="COO">기획운영 총괄(COO)</option>
+            	<option value="CBO">영업 총괄(CBO)</option>
+            	<option value="CFO">재무 전략(CFO)</option>
+            	<option value="CTO">개발 총괄(CTO)</option>
+            	<option value="CMO">마케팅 총괄(CMO)</option>
+            	<option value="DEVELOP">개발(DEVELOP)</option>
+            	<option value="DESIGN">디자인(DESIGN)</option>
+            	<option value="PRODUCT MANAGER">기획(PRODUCT MANAGER)</option>
+            	<option value="MARKETING">마케팅(MARKETING)</option>
+            	<option value="SALES">영업(SALES)</option>
+            	<option value="MANAGE">운영(MANAGE)</option>
+            	<option value="FINANCE">재무(FINANCE)</option>
+            	<option value="EDITOR">에디터(EDITOR)</option>
+            	<option value="PREMARKET">프리마켓(TF)(PREMARKET)</option>
+            </select>
+		</div>
+
+		<div>
+			<label for="">직위</label>
+			<select name="position">
+            	<option value="PRESIDENT"></option>
+            	<option value="VICE_PRESIDENT">부사장</option>
+            	<option value="DIRECTOR">이사</option>
+            	<option value="PRINCIPAL">수석</option>
+            	<option value="SENIOR">책임</option>
+            	<option value="JUNIOR">선임</option>
+            	<option value="EMPLOYEE" selected="">사원</option>
+            	<option value="INTERN">인턴</option>
+            	<option value="PARTTIME">아르바이트</option>
+            </select>
+		</div>
+		<div>
+            <label for="">부서</label>
+            <select name="department">
+            	<option>선택</option>
+            	<option value="COMMUNICATION">커뮤니케이션</option>
+            	<option value="DEVELOPMENT">개발</option>
+            	<option value="CREATIVE">크리에이티브</option>
+            	<option value="SALES_GLOBAL">세일즈</option>
+            	<option value="SUPPORT">경영지원</option>
+            </select>
+        </div>
+
+        <div>
+        	<label for="">한줄 소개</label>
+        	<textarea name="introduction" maxlength="200" placeholder="ex) 난 술을 끊기 위해 오늘도 술을 마신다."></textarea>
+        </div>
+
+        <div>
+        	<label for="">연락처</label>
+            <input type="tel" name="tel">
+        </div>
+
+        <div>
+            <label for="">생년월일</label>
+            <input type="date" name="birthday">
+        </div>
+
+        <div>
+            <label for="">입사일</label>
+            <input type="date" name="joinDate">
+        </div>
+
+        <div>
+            <label for="">컬러</label>
+            <input type="text" name="hexColor">
+        </div>
+
+        <div>
+			<label for="">사진</label>
+			<input type="file" name="image">
+		</div>
+
+        <div>
+            <label for="">상태</label>
+        	<input type="radio" id="status_SERVE" name="status" value="SERVE" checked>
+        	<label for="status_SERVE">재직</label>
+
+        	<input type="radio" id="status_LEAVE" name="status" value="LEAVE">
+        	<label for="status_LEAVE">휴직</label>
+
+        	<input type="radio" id="status_RESIGN" name="status" value="RESIGN">
+        	<label for="status_RESIGN">퇴직</label>
+        </div>
+        <div>
+            <label for="">표시</label>
+        	<input type="radio" id="ishidden_SHOW" name="isHidden" value="SHOW" checked>
+        	<label for="ishidden_SHOW">표시</label>
+        	<input type="radio" id="ishidden_HIDDEN" name="isHidden" value="HIDDEN">
+        	<label for="ishidden_HIDDEN">숨김</label>
+
+        </div>
+	</fieldset>
+
+	<input type="submit" value="등록">
+	<input type="reset" value="취소">
+</form>
+
+
+</body>
+</html>
