@@ -34,14 +34,14 @@ CSS background properties
 -   **inherit**  : 부모 요소로부터 값을 상속 받는다.
 
 
-### background-attachment
+## background-attachment
 
 -   **scroll**  : 배경이 요소에 고정되어 문서와 함께 스크롤된다. 이 값이 기본값이다.
 -   **fixed**  : 뷰 포트에 따라 고정된다.
 -   **local** : 요소의 콘텐츠 위치를 상속받아 콘텐츠와 함께 스크롤된다.
   
   
-### background-position
+## background-position
 
 -   키워드를 하나만 지정하면 두 번째 값은 center가 된다.
 -   기본값은 왼쪽 상단, 즉 0 0 이다. 퍼센트 값을 이용하거나 혹은 top left 키워드를 이용할 수 있다.
@@ -53,7 +53,7 @@ CSS background properties
 -   **xpos ypos**  : px를 포함해서 in, cm, mm, em, ex, pt, pc등을 사용할 수 있다.
 -   **inherit**  : 부모 요소로부터 값을 상속 받는다.
   
-### background-size
+## background-size
 
 -   **width height**  : 첫 번째 값은 width 값이며, 두 번째 값은 height 값이다. width와 height 속성에 사용할 수 있는 값은 auto, px, % 이다. 두 번째 값을 생략하면 auto 값이 적용된다.
 -   **cover**  : 가능한한 배경 이미지 배율을 크게 하여 배경 이미지를 배경 영역에 포함시킨다. 배경 이미지의 일부분은 배경 위치 영역을 벗어날 수 있다.
