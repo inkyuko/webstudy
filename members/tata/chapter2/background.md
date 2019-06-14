@@ -1,11 +1,11 @@
 
 CSS background properties
 
-> background-color
-> background-image
-> background-repeat
-> background-attachment
-> background-position
+- background-color
+- background-image
+- background-repeat
+- background-attachment
+- background-position
 
 ## background-color
 
