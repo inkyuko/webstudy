@@ -19,9 +19,9 @@
 
 ### flex container
 - flex-direction
-- flex-wrap
 - justify-content
 - align-items
+- flex-wrap
 - align-content  
 
 ### flex item
@@ -34,6 +34,13 @@
 
 ![flexproperty](https://d2.naver.com/content/images/2018/12/helloworld-201811-flex_02.png)
 
+### align-items
+- 수직 방향 정렬 방식을 제공
+~~~css
+.flex_container {
+	align-items : center;
+}
+~~~
 
 ### flex-direction
 - 주축의 방향은 왼쪽에서 오른쪽으로 향하는 수평 방향
